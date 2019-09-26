@@ -1,1 +1,14 @@
-
+<div class="">
+  <% if @friends.size > 0 %>
+    <ul>
+      <% @friends.each do |friend| %>
+        <li>
+          <span><img src="<%= friend['photo']['prefix'] + friend['photo']['suffix'] %>" alt="">
+          <%= "#{friend['firstName']} #{friend['lastName']}" %></span>
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>Looks like you don't have any foursquare friends yet.</p>
+  <% end %>
+</div>

@@ -1280,3 +1280,300 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-15 00:51:22 -0500
+Started GET "/" for ::1 at 2019-09-25 19:56:45 -0400
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from call at /Users/reginaldcarterii/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/method_override.rb:22)
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (38.7ms)
+Completed 200 OK in 1781ms (Views: 1728.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2019-09-25 19:56:50 -0400
+Started POST "/search" for ::1 at 2019-09-25 19:57:18 -0400
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"utXWZ2bQpS6YxBndTMXNlFCUP3mE2zIp1dtMiK8m7NsMprR8LB5Iu1lds1ZtKkQLaw2ILMxubD0NYwC540A44w==", "zipcode"=>"", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 443ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-09-25 19:57:24 -0400
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6Ei85PT1d/sy7jRDTONbn8nsuvhOt0AlFB9qG6UCcjheO97/vjuabvN3nshtDNIA8nUNrQYCHjHMpyYq6WSmAA==", "zipcode"=>"19125", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 320ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-09-25 19:58:00 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=1HVLDJUHW3CEUV1JYCQ0RDTNFLL1CVKYOCG2DXIGOAWHQXSH" for ::1 at 2019-09-25 19:58:06 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/auth"):
+  
+actionpack (5.0.7.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.7.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.7.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.7.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.7.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.7.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.7.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.7) lib/rack/handler/webrick.rb:86:in `service'
+/Users/reginaldcarterii/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:140:in `service'
+/Users/reginaldcarterii/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/httpserver.rb:96:in `run'
+/Users/reginaldcarterii/.rvm/rubies/ruby-2.6.1/lib/ruby/2.6.0/webrick/server.rb:307:in `block in start_thread'
+  Rendering /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.8ms)
+  Rendered collection of /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (36.6ms)
+  Rendered /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (64.4ms)
+  Rendering /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.1ms)
+  Rendered /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/actionpack-5.0.7.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (207.8ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::HTML` to `Mime[:html]`. (called from call at /Users/reginaldcarterii/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/method_override.rb:22)
+  Rendering /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb
+  Rendered /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.4ms)
+  Rendering /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript
+  Rendering /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string
+  Rendered /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendering /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string
+  Rendered /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendering /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string
+  Rendered /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+DEPRECATION WARNING: Accessing mime types via constants is deprecated. Please change `Mime::WEB_CONSOLE_V2` to `Mime[:web_console_v2]`. (called from call at /Users/reginaldcarterii/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/method_override.rb:22)
+  Rendered /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (91.9ms)
+  Rendering /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript
+  Rendered /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendering /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript
+  Rendered /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /Users/reginaldcarterii/.rvm/gems/ruby-2.6.1/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (171.5ms)
+Started GET "/auth?code=NR3T2C5ZJJTJSQSI2REAOE5YHSRAYZXQ2V3FCL0CLVB5005B" for ::1 at 2019-09-25 20:50:07 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"NR3T2C5ZJJTJSQSI2REAOE5YHSRAYZXQ2V3FCL0CLVB5005B"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 237ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 20:50:09 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=GVBEKHPW4KROQFLZMNTNCVQ4TJ23YYP3DUUH3A3O4KBOAF2D" for ::1 at 2019-09-25 20:50:17 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"GVBEKHPW4KROQFLZMNTNCVQ4TJ23YYP3DUUH3A3O4KBOAF2D"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 214ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 20:50:17 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 20:51:09 -0400
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from call at /Users/reginaldcarterii/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/method_override.rb:22)
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 92ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=IOHKQ5542Z3XHEZC2HNSNRPPUIUFLRK1TY3KGHS51GORPB54" for ::1 at 2019-09-25 20:51:16 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"IOHKQ5542Z3XHEZC2HNSNRPPUIUFLRK1TY3KGHS51GORPB54"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 346ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 20:51:16 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=QVTRODO15JQ1FHUN3EVK2ZGXS2NIBQU5K4A1EOHIWHPBD3ZR" for ::1 at 2019-09-25 20:51:38 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"QVTRODO15JQ1FHUN3EVK2ZGXS2NIBQU5K4A1EOHIWHPBD3ZR"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 265ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 20:51:39 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 20:52:13 -0400
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from call at /Users/reginaldcarterii/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/method_override.rb:22)
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 27ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=DQ5S2YUCUL2J21MDWUYW3ZVSMMNTAZJJD3VBOMLSQMXO01A5" for ::1 at 2019-09-25 20:52:18 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"DQ5S2YUCUL2J21MDWUYW3ZVSMMNTAZJJD3VBOMLSQMXO01A5"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 289ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 20:52:18 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=T01UY0XOP2RFM4G2IM3B3STDS12AXXVW51VISBB3J1EE0NIJ" for ::1 at 2019-09-25 20:52:21 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"T01UY0XOP2RFM4G2IM3B3STDS12AXXVW51VISBB3J1EE0NIJ"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 162ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 20:52:21 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=PWAHDH5TBKMXLDWU5IJTIGOJQUC5GSTKSOPSMRCU0E4PIKH0" for ::1 at 2019-09-25 20:54:07 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"PWAHDH5TBKMXLDWU5IJTIGOJQUC5GSTKSOPSMRCU0E4PIKH0"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 219ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 20:54:07 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=OTDVMJVQMLQPKKGF4Q3HYZ4KGOWC1WHHHCEJONPNOH0QOQJB" for ::1 at 2019-09-25 20:54:14 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"OTDVMJVQMLQPKKGF4Q3HYZ4KGOWC1WHHHCEJONPNOH0QOQJB"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 141ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 20:54:14 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-09-25 20:55:11 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for ::1 at 2019-09-25 21:00:08 -0400
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from call at /Users/reginaldcarterii/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/method_override.rb:22)
+Processing by SearchesController#friends as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 18ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=HNSQ1IFT5CIYZ1FW4RMO0EZLVTLD1FNX41RFTUEEI2LSO3XS" for ::1 at 2019-09-25 21:00:11 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"HNSQ1IFT5CIYZ1FW4RMO0EZLVTLD1FNX41RFTUEEI2LSO3XS"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 317ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 21:00:11 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=2ZFLF243YK2WENDYZX4I4IISWSDLXMIY2CABWKXFXJ4JP5HX" for ::1 at 2019-09-25 21:01:17 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"2ZFLF243YK2WENDYZX4I4IISWSDLXMIY2CABWKXFXJ4JP5HX"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 408ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 21:01:18 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=KR3A1L0XVTFSXIT22SWJ4HN0EMS4ZKM0REVMBYU04XW2FVZU" for ::1 at 2019-09-25 21:02:54 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"KR3A1L0XVTFSXIT22SWJ4HN0EMS4ZKM0REVMBYU04XW2FVZU"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 180ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 21:02:54 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=3DMKADU43DLXTBLQEFGAKDFO0DVRF3HUQKMHGH3QNCYL1LDR" for ::1 at 2019-09-25 21:03:25 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"3DMKADU43DLXTBLQEFGAKDFO0DVRF3HUQKMHGH3QNCYL1LDR"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 243ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 21:03:25 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=21SXZ1SMH0SWZCGY1OFEH2NFWXGQQJXL4HXK4MR5GNWPBL1B" for ::1 at 2019-09-25 21:18:23 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"21SXZ1SMH0SWZCGY1OFEH2NFWXGQQJXL4HXK4MR5GNWPBL1B"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 160ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 21:18:23 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
