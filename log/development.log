@@ -1577,3 +1577,135 @@ Filter chain halted as :authenticate_user rendered or redirected
 Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2019-09-25 21:27:22 -0400
+Started GET "/" for ::1 at 2019-09-25 21:27:22 -0400
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from call at /Users/reginaldcarterii/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/method_override.rb:22)
+Processing by SearchesController#search as HTML
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 384ms (ActiveRecord: 0.0ms)
+
+
+Completed 302 Found in 408ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=QGFZXFKAVM1KKY1A3VTT1HP3T3Q3I5XUQY0PK3QYQO0AZ04B" for ::1 at 2019-09-25 21:27:37 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"QGFZXFKAVM1KKY1A3VTT1HP3T3Q3I5XUQY0PK3QYQO0AZ04B"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 683ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 21:27:38 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=P0XFA4DPIBYPXDYYJPYBL5EASEVJHW0OUC2AX4HEPZJXZX1X" for ::1 at 2019-09-25 21:27:42 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"P0XFA4DPIBYPXDYYJPYBL5EASEVJHW0OUC2AX4HEPZJXZX1X"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 148ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 21:27:42 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=5QTLFOG2YNHFJDCKXFSDH5WWAMSFZPLIRW4BM1NYB50CVKWK" for ::1 at 2019-09-25 21:35:33 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"5QTLFOG2YNHFJDCKXFSDH5WWAMSFZPLIRW4BM1NYB50CVKWK"}
+Started GET "/" for ::1 at 2019-09-25 21:38:57 -0400
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from call at /Users/reginaldcarterii/.rvm/rubies/ruby-2.6.1/lib/ruby/gems/2.6.0/gems/rack-2.0.7/lib/rack/method_override.rb:22)
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=R0U33AFS2QUSTLQJL2WQYJX41GF32ZU5WVPNVBFTAEPCYBMC&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 36ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=WQHDN0NWRDCB2JGJLSK3K4FFU2RAXFCPHRUZE3FIAIQLSYPU" for ::1 at 2019-09-25 21:39:03 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"WQHDN0NWRDCB2JGJLSK3K4FFU2RAXFCPHRUZE3FIAIQLSYPU"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 488ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-25 21:39:04 -0400
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 1083ms (Views: 1080.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-09-25 21:40:02 -0400
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+LbnMmIt0shyXcrjmGuz1FhQNgzHQMs/f8LEPZvIE/ROxYUpKOM/XbPEYGi5hDpLY8mBWY/1lSuneogM167HzA==", "zipcode"=>"19125", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 460ms (Views: 111.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for ::1 at 2019-09-25 21:40:11 -0400
+Processing by SearchesController#friends as HTML
+  Rendering searches/friends.html.erb within layouts/application
+  Rendered searches/friends.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 461ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for ::1 at 2019-09-25 21:42:08 -0400
+Processing by SearchesController#friends as HTML
+  Rendering searches/friends.html.erb within layouts/application
+  Rendered searches/friends.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 278ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for ::1 at 2019-09-25 21:42:16 -0400
+Processing by SearchesController#friends as HTML
+  Rendering searches/friends.html.erb within layouts/application
+  Rendered searches/friends.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 225ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/search" for ::1 at 2019-09-25 21:42:18 -0400
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for ::1 at 2019-09-25 21:42:34 -0400
+Processing by SearchesController#friends as HTML
+  Rendering searches/friends.html.erb within layouts/application
+  Rendered searches/friends.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 311ms (Views: 50.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for ::1 at 2019-09-25 21:47:03 -0400
+Processing by SearchesController#friends as HTML
+  Rendering searches/friends.html.erb within layouts/application
+  Rendered searches/friends.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 405ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for ::1 at 2019-09-25 21:55:17 -0400
+Processing by SearchesController#friends as HTML
+  Rendering searches/friends.html.erb within layouts/application
+  Rendered searches/friends.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 615ms (Views: 336.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for ::1 at 2019-09-25 21:55:32 -0400
+Processing by SearchesController#friends as HTML
+  Rendering searches/friends.html.erb within layouts/application
+  Rendered searches/friends.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 212ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+

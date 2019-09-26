@@ -3,8 +3,7 @@
     <ul>
       <% @friends.each do |friend| %>
         <li>
-          <span><img src="<%= friend['photo']['prefix'] + friend['photo']['suffix'] %>" alt="">
-          <%= "#{friend['firstName']} #{friend['lastName']}" %></span>
+          <%= "#{friend['firstName']} #{friend['lastName']}" %>
         </li>
       <% end %>
     </ul>
